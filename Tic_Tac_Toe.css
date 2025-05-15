@@ -1,0 +1,116 @@
+/* Reset default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Arial", sans-serif;
+}
+
+/* Stylish Heading */
+h1 {
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.6);
+    font-size: 3rem;
+    color: white;
+    margin-top: 10px;
+}
+
+/* Body Styling */
+body {
+    background: linear-gradient(135deg, #00c6ff, #0072ff); 
+    text-align: center;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Game Container */
+.container {
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Game Board */
+.game {
+    height: 420px;
+    width: 420px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    background: rgba(255, 255, 255, 0.2);
+    padding: 15px;
+    border-radius: 10px;
+    background-color:burlywood;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Box Styling */
+.box {
+    height: 100px;
+    width: 100px;
+    padding: 0;
+    margin: 1px;
+    border-radius: 10px;
+    border: none;
+    font-size: 36px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: brown;
+    background: white;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+}
+
+.box:hover {
+    transform: scale(1.05);
+}
+
+/* Buttons Styling */
+button {
+    padding: 12px 20px;
+    border-radius: 8px;
+    border: none;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+}
+
+#reset-btn,
+#new-btn {
+    color: white;
+    background: linear-gradient(135deg, #ff6a00, #ee0979);
+}
+
+#reset-btn:hover,
+#new-btn:hover {
+    background: linear-gradient(135deg, #ee0979, #ff6a00);
+    transform: scale(1.1);
+}
+
+/* Message Styling */
+#msg {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: white;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+/* Message Container */
+.msg-container {
+    margin-top: 40px;
+    margin-bottom: 30px;
+}
+
+/* Hide Element */
+.hide {
+    display: none;
+}
